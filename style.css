@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+    transition-delay: .5s;
+    scroll-padding-top: 60px;}
+p {
+    font-size: 25px;
+    text-align: justify;}
+a {
+    cursor: pointer;}
+#icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+#body {
+    margin: 0; 
+    background-color: #1b1b1b; 
+    user-select: none; color: white;
+    overflow-x: hidden;}
+#banner {
+    height: 90px; background-color: #111111f4; border-bottom: 40px solid #171717;}
+#logo {
+    position: absolute; width: 80px; height: 80px; border-radius: 80px; display: flexbox;}
+#logo:hover {
+    animation: logo 2s forwards;}
+#logo {
+    animation: logo2 2s forwards;}
+#logo1 {
+    width: 80px; height: 80px; border: 2px solid white; border-radius: 100%; border-top: 2px solid transparent; border-left: 2px solid transparent; display: flex; align-items: center; justify-content: center; margin-left: 10px; position: absolute;}
+#logo1:hover {
+    animation: logo1 2s forwards, shadow 1s forwards;}
+#logo1 {
+    animation: logo3 2s forwards, shadowBack 1s forwards;}
+#languaje {
+    height: 40px; width: 40px; background-color: white; border-radius: 30px; display: flex; align-items: center; justify-content: center; margin-top: 30px; border: 0 solid; position: absolute;}
+#languaje:hover {
+    animation: global1 1s forwards;}
+#languaje {
+    animation: global3 1s forwards;}
+#global {
+    height: 32px; width: 32px; position: absolute; cursor: pointer; color: #232323; padding: 5px; border-radius: 32px;}
+#global:hover {
+    animation: global 2s forwards, shadow 1s forwards;}
+#global {
+    animation: global2 1s forwards, shadowBack 1s forwards;}
+#personal {
+    width: 120px; height: 120px; background-image: linear-gradient(130deg,
+    #ffff, #a7a7a7, #7b7b7b, #696969, #4a4a4a);
+     border-radius: 100px; display: flex; align-items: center; justify-content: center; border: 5px solid rgb(33, 33, 33); cursor: default; animation: shadow 6s alternate infinite, shadowBack 3s alternate infinite;}
+#code {
+    color: ghostwhite; width: 60px; height: 60px; font-weight: 200; position: absolute; }
+#name {
+    font-family: sono-title;
+    font-size: 50px;
+    position: relative;
+    font-style: normal;}
+#subtitle {
+    font-family: sono-title;
+    font-size: 40px;
+    position: relative;}
+#below {
+    width: 700px;
+    height: 5px;
+    border-radius: 5px;
+    border-top: 5px solid white;
+    animation: shadow 6s alternate infinite, shadowBack 3s alternate infinite;}
+#social {
+    width: 30px; height: 30px; cursor: pointer; margin: 15px 0 15px 0; position: relative;}
+#english:active {
+    animation: languaje 2s forwards;}
+#english {
+    font-weight: bold;}
+#spanish {
+    font-weight: bold;}
+#spanish:active {
+    animation: languaje 2s forwards;}
+#main {
+    background-color: transparent;}  
+#lines {
+    border-radius: 5px; background-color: #4b4b4b;}
+#numeral {
+    background-color: gray; width: 20px; height: 20px; border-radius: 5px;}
+.content {
+    display: flex; flex-direction: row; position: relative; left: 70%; width: 220x; height: 60px; background-color: #171717; margin: 10px 0 10px 0; position: relative; justify-content: left; align-items: center; padding-left: 20px; border-radius: 60px 0 0 60px; cursor: pointer; border-bottom: 5px solid white; border-left: 5px solid transparent;}
+.content:hover {
+    animation: social 2s forwards, social2 2s forwards;}
+.content {
+    animation: social3 2s forwards, social4 2s forwards;}
+.nav-item {
+    margin: 5px; text-decoration: none; color: white; font-family: helvetica; font-weight: bold; background-color: rgb(53, 53, 53); padding: 5px 7px 5px 7px; border-radius: 20px; margin-top: 30px; border: 3px solid white; border-top: 3px solid transparent; border-left: 3px solid transparent;}
+.nav-item:hover {
+    animation: color1 1s forwards, shadow 1s forwards; }
+.nav-item {
+    animation: color2 1s forwards, shadowBack 1s forwards;}
+.upper:hover {
+    animation: shadow 1s alternate forwards;}
+.upper {
+    animation: shadowBack 1s alternate forwards;}
+@keyframes languaje{
+    from{box-shadow: none; background-color: transparent;}
+    to{background-color: #c8020264; color: white; box-shadow: 0 0 20px #c80202}}
+@font-face {
+    font-family: sono-title;
+    src: url(./fonts/Sono-Bold.ttf);}
+@font-face {
+    font-family: signika-text;
+    src: url(./fonts/SignikaNegative-Bold.ttf);}
+@keyframes logo1 {
+    from{border: 2px solid white;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;
+    }
+    to{
+        border: 2px solid white;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;}}
+@keyframes logo {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-40deg);}}
+@keyframes logo3 {
+    from{
+        border: 2px solid white;
+        border-bottom: 2px solid transparent;
+        border-right: 2px solid transparent;}
+    to{border: 2px solid white;
+        border-top: 2px solid transparent;
+        border-left: 2px solid transparent;}}
+@keyframes logo2 {
+    from{transform: rotate(-40deg);}
+    to{transform: rotate(0deg);}}
+@keyframes secondBar {
+    from {width: 400px;}
+    to{width: 0;}}
+@keyframes secondBar2 {
+    from {width: 0px;}
+    to{width: 400px;}}
+@keyframes color1 {
+    from{background-color: rgb(53, 53, 53);
+    color: white;
+    }
+    to{background-color: white;
+    color: rgb(53, 53, 53);;
+    }}
+@keyframes color2 {
+    from{background-color: white;
+        color: rgb(53, 53, 53);;
+        }
+    to{background-color: rgb(53, 53, 53);
+        color: white;
+        }}
+@keyframes global {
+    from{color: #232323;}
+    to{color: #ffffff;}}
+@keyframes global1 {
+    from{background-color: #ffffff;}
+    to{background-color: #232323;}}
+@keyframes global2 {
+    from{color: #ffffff;}
+    to{color: #232323;}}
+@keyframes global3 {
+    from{background-color: #232323;}
+    to{background-color: #ffffff;}}
+@keyframes personal1 {
+    from{box-shadow: 0 0 50px #c80202;}
+    to{box-shadow: none;}}
+@keyframes shadow {
+    from{box-shadow: none;}
+    to{box-shadow: 0 0 35px #c80202;}}
+@keyframes shadowBack {
+    from{box-shadow: 0 0 35px #c80202;}
+    to{box-shadow: none;}}
+@keyframes social {
+    from{border: 5px solid white;
+        border-top: 5px solid transparent;
+        border-right: 5px solid transparent;
+        box-shadow: none;
+    }
+    to{
+        border: 5px solid white;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        box-shadow: 0 0 50px #c80202;
+    }}
+@keyframes social2 {
+    from {left: 70%;}
+    to {left: 50%;}}
+@keyframes social3 {
+    from{border: 5px solid white;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        box-shadow: 0 0 50px #c80202;}
+    to{border: 5px solid white;
+        border-top: 5px solid transparent;
+        border-right: 5px solid transparent;
+        box-shadow: none;}}
+@keyframes social4 {
+    from {left: 50%;}
+    to {left: 70%;}}
+
